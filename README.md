@@ -12,8 +12,9 @@ Brug findFirst metoden fra PeopleArray klassen til at løse følgende opgaver.
 4. Find den første person i listen af personer, hvis alder er lig længden af navnet.
 
 Lav en metode findAll i PeopleArray klassen. Metoden skal kunne kaldes med
-følgende statement.
-` List<Person> people = peopleArray.findAll(p -> p.getAge() > 30);`
+følgende statement.\
+` List<Person> people = peopleArray.findAll(p -> p.getAge() > 30);`\
+
 Brug findAll metoden til at løse følgende opgaver
 1. Find alle personer, hvis navn indeholder et ’i’
 2. Find alle personer, hvis navn starter med S
@@ -43,6 +44,6 @@ Metodens signatur:\
 */\
 public static boolean removeIf(List runners, Predicate filter)
 
-4. Bruge metoden fra delopgave 3. til at fjerne løbere med lapTime >= 40.
+4. Brug metoden fra delopgave 3 til at fjerne løbere med lapTime >= 40.
 5. Brug metoden List.removeIf() og en Predicate lambda til at fjerne løbere
 med lapTime >= 40. 
