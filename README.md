@@ -1,4 +1,4 @@
-# Opgaver lektion 15
+# Opgaver lektion 05
 [benn-christensen/Prog2Lektion05](https://github.com/benn-christensen/Prog2Lektion05)
 ## Opgave 1
 Person klassen indeholder en metode printName der ikke kompilerer.
@@ -14,7 +14,6 @@ Brug findFirst metoden fra PeopleArray klassen til at løse følgende opgaver.
 Lav en metode findAll i PeopleArray klassen. Metoden skal kunne kaldes med
 følgende statement.\
 ` List<Person> people = peopleArray.findAll(p -> p.getAge() > 30);`\
-
 Brug findAll metoden til at løse følgende opgaver
 1. Find alle personer, hvis navn indeholder et ’i’
 2. Find alle personer, hvis navn starter med S
@@ -25,7 +24,7 @@ Java har et funktionelt generisk interface Predicate<T> som har en metode
 boolean test(T t), erstat PeoplePredicate med Predicate<T> i metoderne findFirst
 og findAll.
 
-### Ekstraopgave: 
+**Ekstraopgave:** 
 Kan man lave PeopleArray klassen generisk, så man kan bruge den med andre klasser end Person klassen?
 ## Opgave 3
 1. Udskriv en linie for hver løber med name og lapTime ved at bruge List.forEach() metoden med en Consumer lambda.
@@ -35,15 +34,13 @@ Kan man lave PeopleArray klassen generisk, så man kan bruge den med andre klass
 1. Kør programmet og bemærk den exception, som kastes. Hvad er problemet?
 2. Erstat den fejlende for-sætning med en løkke, som anvender en iterator til
 at fjerne løbere med lapTime >= 40. Udskriv listen med løberne.
-3. Lav en metode, som fjerner løbere fra en liste af løbere vha. et lambda udtryk. Metoden skal implementeres vha. en iterator.
-
-Metodens signatur:\
+3. Lav en metode, som fjerner løbere fra en liste af løbere vha. et lambda udtryk. Metoden skal implementeres vha. en iterator.\
+*Metodens signatur:\
 /**\
 \* Removes runners that satisfies the given filter.\
 \* Returns true, if any runner is removed.\
-*/\
-public static boolean removeIf(List runners, Predicate filter)
-
+\*/\
+public static boolean removeIf(List runners, Predicate filter)*
 4. Brug metoden fra delopgave 3 til at fjerne løbere med lapTime >= 40.
 5. Brug metoden List.removeIf() og en Predicate lambda til at fjerne løbere
 med lapTime >= 40. 
